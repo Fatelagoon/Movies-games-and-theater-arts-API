@@ -19,7 +19,7 @@ router.post("/", checkAuth, (req, res, next)=> {
         _id: new mongoose.Types.ObjectId(),
         name: req.body.name,
         surname: req.body.surname,
-        rating: req.body.rating,
+        rating: req.body.rating
     });
     Aktor.save()
     .then(result => {
@@ -48,7 +48,7 @@ router.patch("/:AktorId", checkAuth, (req, res, next)=> {
     Aktor.update({_id:id}, { $set: {
         name: req.body.name,
         surname: req.body.surname,
-        rating: req.body.rating,
+        rating: req.body.rating
         
     }}).exec()
     .then(result=> {

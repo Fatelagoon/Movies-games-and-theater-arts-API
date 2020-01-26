@@ -1,5 +1,5 @@
 {
-  "name": "movies database",
+  "name": "Movies and games database",
   "version": "1.0.0",
   "description": "API bazy filmów",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "API",
     "rest"
   ],
-  "author": "Dariusz Kralewski",
+  "author": "Kamil Korzeniewski, Krystian Klinikowski",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.7",

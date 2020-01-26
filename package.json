@@ -11,7 +11,7 @@
     "API",
     "rest"
   ],
-  "author": "Dariusz Kralewski",
+  "author": "Kamil Korzeniewski i Krystian Klinikwoski",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.7",

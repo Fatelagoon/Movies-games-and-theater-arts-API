@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const productRoutes = require("./api/routes/products");
 const userRoutes = require("./api/routes/users");
 
-mongoose.connect("mongodb+srv://shop:"+ process.env.MONGO_PASS + "@mbo-ns57q.mongodb.net/mbo?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://Movies_tvseries:"+ process.env.MONGO_PASS + "@mbo-ns57q.mongodb.net/mbo?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({extended: false}));

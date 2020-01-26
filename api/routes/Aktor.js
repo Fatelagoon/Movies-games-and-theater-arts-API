@@ -6,7 +6,7 @@ const checkAuth = require("../middleware/check-auth");
 const Aktor = require("../models/Aktor");
 
 router.get("/", checkAuth, (req, res, next)=> {
-    Product.find().exec()
+    games.find().exec()
     .then(docs=> {
         res.status(200).json(docs);
     })

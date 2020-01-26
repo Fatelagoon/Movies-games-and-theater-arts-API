@@ -12,8 +12,12 @@ mongoose.connect("mongodb+srv://shop:"+ process.env.MONGO_PASS + "@mbo-ns57q.mon
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-app.use("/products", productRoutes);
 app.use("/users", userRoutes);
+app.use("/movie", movieRoutes);
+app.use("/tvseries", tvseriesRoutes);
+app.use("/theater_arts", theater_artsRoutes);
+app.use("/aktor", aktorRoutes);
+app.use("/games", gamesRoutes);
 
 app.use((req, res, next)=> {
     const error = new Error("Nie znaleziono");
@@ -29,5 +33,3 @@ app.use((error, req, res, next)=> {
 });
 
 module.exports = app;
-
-//skonczyliśmy routy na użytkowniku - brakuje JWT
